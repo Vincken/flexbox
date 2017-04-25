@@ -13,6 +13,7 @@
 
 ### 1.伸缩容器display
 &emsp;&emsp;要开始使用Flexbox，必须先让父元素变成一个Flex容器。显式声明了Flex容器之后，一个Flexbox格式化上下文（Flexbox formatting context）就立即启动了。语法如下：
+
 &emsp;&emsp;`display: flex | inline-flex`
 
  - flex: 设置为块伸缩容器。
@@ -47,6 +48,7 @@
 [demo](http://htmlpreview.github.io/?https://github.com/Vincken/flexbox/blob/master/flex%20demo/2.html)
 ### 3.伸缩换行flex-wrap
 &emsp;&emsp;flex-wrap主要用来定义伸缩容器里是单行还是多行显示，交叉轴的方向决定了新行堆放的方向。
+
 &emsp;&emsp;`flex-wrap: nowrap | wrap | wrap-reverse`
 
  - nowrap（默认值）: 不换行。
@@ -65,15 +67,16 @@
 &emsp;&emsp;`flex-flow: <'flex-direction'> || <'flex-wrap'>`
 ### 5.主轴对齐justify-content
 &emsp;&emsp;justify-content属性主要定义了Flex项目在Main-Axis上的对齐方式。
+
 &emsp;&emsp;`justify-content: flex-start | flex-end | center | space-between | space-around`
 
  - flex-start（默认值）: 让伸缩项目向Main-Axis开始边缘对齐。
  - flex-end: 让伸缩项目向Main-Axis结束边缘对齐。
  - center: 让伸缩项目向Main-Axis中间位置对齐。
  - space-between: 项目之间的间距相等（两端对齐）。
-![](https://github.com/Vincken/flexbox/raw/master/image/space-between.jpg)
+![](https://github.com/Vincken/flexbox/raw/master/image/space-between.jpeg)
  - space-around: 每个项目两侧的间隔相等。
-![](https://github.com/Vincken/flexbox/raw/master/image/space-around.jpg)
+![](https://github.com/Vincken/flexbox/raw/master/image/space-around.jpeg)
 ```css?linenums
 .container{
 	display: flex;
@@ -83,6 +86,7 @@
 [demo](http://htmlpreview.github.io/?https://github.com/Vincken/flexbox/blob/master/flex%20demo/4.html)
 ### 6.伸缩换行align-items
 &emsp;&emsp;align-items定义了Flex项目在Cross-Axis上的对齐方式。
+
 &emsp;&emsp;`stretch | flex-start | flex-end | center | baseline`
 
  - stretch（默认值）: 伸缩项目填充整个伸缩容器，会在控制大小的属性的限制下尽可能接近所在容器的尺寸。
