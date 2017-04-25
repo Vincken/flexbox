@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>伸缩流方向</title>
+	<style type="text/css" media="screen">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body>div {
+			border: 1px solid #ccc;
+			margin: 20px;
+			padding: 10px;
+		}
+		div > div {
+			border: 1px solid #f36;
+
+		}
+		.flex {
+			display: flex;
+		}
+		
+		.row{
+			flex-direction: row;
+		}
+		.row-reverse{
+			flex-direction: row-reverse;
+		}
+		.column{
+			flex-direction: column;
+		}
+		.column-reverse{
+			flex-direction: column-reverse;
+		}
+	
+	</style>	
+</head>
+<body>
+	<div class="flex row">
+		<div>A</div>
+		<div>B</div>
+		<div>C</div>
+		<div>D</div>
+	</div>
+
+	<div class="flex row-reverse">
+		<div>A</div>
+		<div>B</div>
+		<div>C</div>
+		<div>D</div>
+	</div>
+
+	<div class="flex column">
+		<div>A</div>
+		<div>B</div>
+		<div>C</div>
+		<div>D</div>
+	</div>
+
+	<div class="flex column-reverse">
+		<div>A</div>
+		<div>B</div>
+		<div>C</div>
+		<div>D</div>
+	</div>
+
+</body>
+</html>

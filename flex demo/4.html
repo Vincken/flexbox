@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>justify-content</title>
+	<style type="text/css" media="screen">
+		.flex {
+			width: 500px;
+			height: 200px;
+			margin: 20px;
+			border: 1px solid #ccc;
+			font-size: 20px;
+			font-weight: bold;
+			color: #fff;
+			display: flex;
+			align-items: flex-start;
+		}
+		.column{
+			flex-direction: column;
+			height: 500px;
+		}
+		.flex-end{
+			justify-content: flex-end;
+		}
+		.center{
+			justify-content: center;
+		}
+		.space-between{
+			justify-content: space-between;
+		}
+		.space-around{
+			justify-content: space-around;
+		}
+		.flex > div {
+			padding: 10px;
+		}
+		.flex div:nth-child(1){
+			background-color: #305ed5;
+			line-height: 50px;
+		}
+		.flex div:nth-child(2){
+			background-color: #e727b3;
+			line-height: 80px;
+		}
+		.flex div:nth-child(3) {
+			background-color: #3f8514;
+			line-height: 100px;
+		}
+		.flex div:nth-child(4) {
+			background-color: #e6b710;
+		}
+		.flex div:nth-child(5){
+			background-color: #f96;
+		}
+	</style>
+</head>
+<body>
+	<h3>flex-start</h3>
+	<div class="flex flex-start">
+		<div class="box-item">box1</div>
+		<div class="box-item">box2</div>
+		<div class="box-item">box3</div>
+		<div class="box-item">box4</div>
+		<div class="box-item">box5</div>
+	</div>
+	<div class="flex column flex-start">
+		<div class="box-item">box1</div>
+		<div class="box-item">box2</div>
+		<div class="box-item">box3</div>
+		<div class="box-item">box4</div>
+		<div class="box-item">box5</div>
+	</div>
+
+	<h3>flex-end</h3>
+	<div class="flex flex-end">
+		<div class="box-item">box1</div>
+		<div class="box-item">box2</div>
+		<div class="box-item">box3</div>
+		<div class="box-item">box4</div>
+		<div class="box-item">box5</div>
+	</div>
+	<div class="flex column flex-end">
+		<div class="box-item">box1</div>
+		<div class="box-item">box2</div>
+		<div class="box-item">box3</div>
+		<div class="box-item">box4</div>
+		<div class="box-item">box5</div>
+	</div>
+
+	<h3>center</h3>
+	<div class="flex center">
+		<div class="box-item">box1</div>
+		<div class="box-item">box2</div>
+		<div class="box-item">box3</div>
+		<div class="box-item">box4</div>
+		<div class="box-item">box5</div>
+	</div>
+	<div class="flex column center">
+		<div class="box-item">box1</div>
+		<div class="box-item">box2</div>
+		<div class="box-item">box3</div>
+		<div class="box-item">box4</div>
+		<div class="box-item">box5</div>
+	</div>
+
+	<h3>space-between</h3>
+	<div class="flex space-between">
+		<div class="box-item">box1</div>
+		<div class="box-item">box2</div>
+		<div class="box-item">box3</div>
+		<div class="box-item">box4</div>
+		<div class="box-item">box5</div>
+	</div>
+	<div class="flex column space-between">
+		<div class="box-item">box1</div>
+		<div class="box-item">box2</div>
+		<div class="box-item">box3</div>
+		<div class="box-item">box4</div>
+		<div class="box-item">box5</div>
+	</div>
+
+	<h3>space-around</h3>
+	<div class="flex space-around">
+		<div class="box-item">box1</div>
+		<div class="box-item">box2</div>
+		<div class="box-item">box3</div>
+		<div class="box-item">box4</div>
+		<div class="box-item">box5</div>
+	</div>
+	<div class="flex column space-around">
+		<div class="box-item">box1</div>
+		<div class="box-item">box2</div>
+		<div class="box-item">box3</div>
+		<div class="box-item">box4</div>
+		<div class="box-item">box5</div>
+	</div>
+</body>
+</html>

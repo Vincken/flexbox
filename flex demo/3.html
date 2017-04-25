@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>伸缩换行</title>
+	<style type="text/css" media="screen">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body>div {
+			border: 1px solid #ccc;
+		}
+		div > div {
+			width: 200px;
+			height: 200px;
+			line-height: 200px;
+			text-align: center;
+			border: 1px solid #f36;
+		}
+		.flex {
+			display: flex;
+		}
+		.no-wrap{
+			flex-wrap: nowrap;
+		}
+		.wrap{
+			flex-wrap: wrap;
+		}
+		.wrap-reverse{
+			flex-wrap: wrap-reverse;
+		}
+	</style>	
+</head>
+<body>
+	<div class="flex no-wrap">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+	<br>
+	<div class="flex wrap">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div>8</div>
+		<div>9</div>
+		<div>10</div>
+		<div>11</div>
+		<div>12</div>
+	</div>
+	<br>
+	<div class="flex wrap-reverse">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div>8</div>
+		<div>9</div>
+		<div>10</div>
+		<div>11</div>
+		<div>12</div>
+	</div>
+
+</body>
+</html>
