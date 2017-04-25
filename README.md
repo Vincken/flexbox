@@ -12,10 +12,18 @@
 &emsp;&emsp;有关于浏览器支持情况可参考[caniuse.com](http://caniuse.com/)。
 
 ## 1.伸缩容器display
-```
+&emsp;&emsp;要开始使用Flexbox，必须先让父元素变成一个Flex容器。显式声明了Flex容器之后，一个Flexbox格式化上下文（Flexbox formatting context）就立即启动了。语法如下：
+&emsp;&emsp;==display: flex | inline-flex==
+
+ - flex: 设置为块伸缩容器。
+ - inline-box: 设置为内联伸缩容器。
+
+```css?linenums
 .container{
 	display: flex;
 }
 .container{
 	display: inline-flex;
 }
+```
+[demo](http://htmlpreview.github.io/?https://github.com/Vincken/flexbox/blob/master/flex%20demo/1.html)
