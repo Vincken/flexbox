@@ -64,6 +64,7 @@
 [demo](http://htmlpreview.github.io/?https://github.com/Vincken/flexbox/blob/master/flex%20demo/3.html)
 ### 4.伸缩方向和换行flex-flow
 &emsp;&emsp;flex-flow是flex-direction和flex-wrap两个属性的速记属性。
+
 &emsp;&emsp;`flex-flow: <'flex-direction'> || <'flex-wrap'>`
 ### 5.主轴对齐justify-content
 &emsp;&emsp;justify-content属性主要定义了Flex项目在Main-Axis上的对齐方式。
