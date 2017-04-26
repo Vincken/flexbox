@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>align-self</title>
+<style>
+*{
+  margin: 0;
+  padding: 0;
+}
+.flex-container {
+  border: 1px solid #59a659;
+  margin: 50px;
+  background-color:#2e0c05;
+  height: 300px;
+  width: 565px;
+  display: flex;
+}
+.flex-container > div {
+  width: 100px;
+  min-height: 100px;
+  border: 1px solid #59a659;
+  margin: 5px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  font-weight:bold;
+ }
+.flex-container > div:nth-child(1){
+  background-color: #59a659;
+  align-self: flex-start;
+}
+.flex-container > div:nth-child(2){
+  background-color: #122112;
+  align-self: flex-end;
+  
+}
+.flex-container > div:nth-child(3) {
+  background-color: #a67359;
+  align-self: center;
+}
+.flex-container > div:nth-child(4){
+  background-color:#e65e19;
+  align-self: baseline;
+}
+.flex-container > div:nth-child(5) {
+  background-color: #e619a1;
+  align-self: stretch;
+}
+
+
+	
+</style>	
+</head>
+<body>
+	<div class="flex-container">
+		<div>flex-start</div>
+		<div>flex-end</div>
+		<div>center</div>
+		<div>baseline</div>
+		<div>stretch</div>
+	</div>
+</body>
+</html>

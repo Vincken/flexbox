@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>flex-basis</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .flex-container {
+        outline: 1px solid #59a659;
+        background-color: #2e0c05;
+        height: 300px;
+        width: 800px;
+        display: flex;
+    }
+    
+    .flex-container > div {
+        width: 100px;
+        outline: 1px solid #59a659;
+        margin: 50px;
+        flex-basis: 30px;
+    }
+    .flex-grow > div{
+        width: 50px;
+        margin: 25px;
+    }
+    
+    .flex-container > div:nth-child(1) {
+        background-color: #59a659;
+    }
+    
+    .flex-container > div:nth-child(2) {
+        background-color: #122112;
+    }
+    
+    .flex-container > div:nth-child(3) {
+        background-color: #a67359;
+    }
+    
+    .flex-container > div:nth-child(4) {
+        background-color: #e65e19;
+    }
+    
+    .flex-container > div:nth-child(5) {
+        background-color: #e619a1;
+    }
+
+    .flex-grow>div:nth-child(1){
+        flex-grow: 0;
+    }
+    .flex-grow>div:nth-child(2){
+        flex-grow: 1;
+    }
+    .flex-grow>div:nth-child(3){
+        flex-grow: 2;
+    }
+    .flex-grow>div:nth-child(4){
+        flex-grow: 3;
+    }
+     .flex-grow>div:nth-child(5){
+        flex-grow: 4;
+    }
+    .flex-shrink>div:nth-child(1){
+        flex-shrink: 0;
+    }
+    .flex-shrink>div:nth-child(2){
+        flex-shrink: 1;
+    }
+    .flex-shrink>div:nth-child(3){
+        flex-shrink: 2;
+    }
+    .flex-shrink>div:nth-child(4){
+        flex-shrink: 3;
+    }
+    .flex-shrink>div:nth-child(5){
+        flex-shrink: 4;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container flex-grow">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <br>
+    <div class="flex-container flex-shrink">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>

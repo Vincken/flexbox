@@ -87,7 +87,7 @@
 ### 6.伸缩换行align-items
 &emsp;&emsp;align-items定义了Flex项目在Cross-Axis上的对齐方式。
 
-&emsp;&emsp;`stretch | flex-start | flex-end | center | baseline`
+&emsp;&emsp;`align-items: stretch | flex-start | flex-end | center | baseline`
 
  - stretch（默认值）: 伸缩项目填充整个伸缩容器，会在控制大小的属性的限制下尽可能接近所在容器的尺寸。
  - flex-start : 让伸缩项目向Cross-Axis开始边缘对齐。
@@ -102,3 +102,68 @@
 }
 ```
 [demo](http://htmlpreview.github.io/?https://github.com/Vincken/flexbox/blob/master/flex%20demo/5.html)
+### 7.显示顺序order
+&emsp;&emsp;order定义了定义项目的排列顺序。数值越小，排列越靠前，默认为0。
+
+&emsp;&emsp;`order: <number>`
+
+```css?linenums
+.item{
+	order: 3;
+}
+```
+[demo](http://htmlpreview.github.io/?https://github.com/Vincken/flexbox/blob/master/flex%20demo/6.html)
+### 8.交叉轴对齐align-self
+&emsp;&emsp;align-self用来设置单独伸缩项目在交叉轴的对齐方式，可覆盖伸缩容器的align-items属性，取值和align-items一样。
+
+&emsp;&emsp;`align-self: stretch | flex-start | flex-end | center | baseline`
+
+```css?linenums
+.item{
+	align-self: center;
+}
+```
+[demo](http://htmlpreview.github.io/?https://github.com/Vincken/flexbox/blob/master/flex%20demo/7.html)
+### 9.放大比例flex-grow
+&emsp;&emsp;flex-grow定义项目的放大比例，默认为0，表示有多余空间时，项目也不放大。
+
+&emsp;&emsp;`flex-gorw: <number> `
+
+```css?linenums
+.item{
+	flex-grow: 1;
+}
+```
+[demo](http://htmlpreview.github.io/?https://github.com/Vincken/flexbox/blob/master/flex%20demo/8.html)
+### 10.缩小比例flex-shrink
+&emsp;&emsp;flex-shrink属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。
+
+&emsp;&emsp;`flex-shrink: <number> `
+
+```css?linenums
+.item{
+	flex-shrink: 1;
+}
+```
+[demo](http://htmlpreview.github.io/?https://github.com/Vincken/flexbox/blob/master/flex%20demo/9.html)
+### 11.伸缩基准值flex-basis
+&emsp;&emsp;flex-basis属性定义了在分配多余空间之前，项目占据的主轴空间。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为auto，即项目的本来大小。
+
+&emsp;&emsp;`flex-basis: <length> | auto `
+
+```css?linenums
+.item{
+	flex-basis: 200px;
+}
+```
+[demo](http://htmlpreview.github.io/?https://github.com/Vincken/flexbox/blob/master/flex%20demo/10.html)
+### 12.伸缩性flex
+&emsp;&emsp;flex是flex-grow、flex-shrink和flex-basis三个属性的简写。
+
+&emsp;&emsp;`flex: none | [ <'flex-grow'> <'flex-shrink'> <'flex-basis'> ] `
+
+```css?linenums
+.item{
+	flex: 0 1 auto;
+}
+```
